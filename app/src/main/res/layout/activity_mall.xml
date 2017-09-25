@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_line"
+        android:layout_weight="1"
+        android:paddingTop="49dp"
+        android:paddingBottom="49dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/mallbigpic"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+            <np.TextView
+                style="@style/ALKATIP"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/textdark"
+                android:id="@+id/malltitle"
+                android:text="قۇرۇق"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <np.TextView
+                    style="@style/ALKATIP"
+                    android:textColor="@color/fbutton_color_peter_river"
+                    android:id="@+id/mallprice"
+                    android:textSize="14dp"
+                    android:text="كىلوسى 0 يۈئەن"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"/>
+                <np.TextView
+                    style="@style/ALKATIP"
+                    android:textColor="@color/gray"
+                    android:id="@+id/mallleft"
+                    android:textSize="13dp"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <np.TextView
+                    android:id="@+id/countlabel"
+                    android:textColor="@color/gray"
+                    style="@style/ALKATIP"
+                    android:textSize="13dp"
+                    android:text=""
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.mikepenz.iconics.view.IconicsImageView
+                    style="@style/tabicons"
+                    android:id="@+id/detailminus"
+                    android:background="@drawable/bg_plusminus"
+                    app:iiv_color="@android:color/white"
+                    android:padding="3dp"
+                    app:iiv_icon="gmi-minus" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="13dp"
+                    android:padding="2dp"
+                    android:textColor="@color/gray"
+                    android:text="0"
+                    android:id="@+id/mallcount"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit"/>
+                <com.mikepenz.iconics.view.IconicsImageView
+                    style="@style/tabicons"
+                    android:id="@+id/detailplus"
+                    android:background="@drawable/bg_plusminus"
+                    app:iiv_color="@android:color/white"
+                    android:padding="3dp"
+                    app:iiv_icon="gmi-plus" />
+
+            </LinearLayout>
+            <np.TextView
+                style="@style/ALKATIP"
+                android:text="چۈشەندۈرۈلۈشى"
+                android:layout_margin="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/textdark"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_footer"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <np.TextView
+                style="@style/ALKATIP"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/malldesc"
+                android:text="ئۇچۇر يوق"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:paddingRight="10dp"
+        android:elevation="6dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal|bottom">
+        <np.Button
+            style="@style/ALKATIP"
+            android:id="@+id/addtocart"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:text="سېۋەتكە سېلىش"
+            android:enabled="false"
+            android:background="@color/gray_button"/>
+        <np.TextView
+            style="@style/ALKATIP"
+            android:id="@+id/malltotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/red_hint"
+            android:text="جەمىي 129 يۈئەن بولدى"
+            android:textSize="14dp"
+            android:gravity="right|center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/fbutton_color_alizarin"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|top">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:visibility="invisible"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/white"
+            app:iiv_icon="gmi-plus" />
+        <np.TextView
+            android:id="@+id/webtitle"
+            style="@style/headertitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_weight="1" />
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/backarrow"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/white"
+            app:iiv_icon="gmi-arrow-right" />
+
+    </LinearLayout>
+</FrameLayout>

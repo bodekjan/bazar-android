@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_line"
+        android:layout_weight="1"
+        android:paddingTop="49dp"
+        android:paddingBottom="49dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <np.TextView
+                style="@style/ALKATIP"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/malldesc"
+                android:text="يانفۇن نۇمىرىڭىز"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/uphone"
+                android:textColor="@color/gray"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <np.TextView
+                style="@style/ALKATIP"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/malldesc"
+                android:text="ئادرىسڭىز"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/uaddress"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:textColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <np.TextView
+                style="@style/ALKATIP"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/malldesc"
+                android:text="ماللار"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cartrecycler"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+            <np.TextView
+                style="@style/ALKATIP"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/malldesc"
+                android:text="قۇشۇمچە مۇلازىمەت"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/servicerecycler"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+            <np.TextView
+                style="@style/ALKATIP"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/malldesc"
+                android:text="پۇل تۆلەش ئۇسۇلى"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <np.TextView
+                style="@style/ALKATIP"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/red_hint"
+                android:text="ئۈندىدار چىقىمدانى"
+                android:textSize="14dp"
+                android:gravity="right|center_vertical"/>
+            <np.TextView
+                style="@style/ALKATIP"
+                android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/malldesc"
+                android:text="ئۇمۇمى سومما"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <np.TextView
+                style="@style/ALKATIP"
+                android:id="@+id/malltotal"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/red_hint"
+                android:text="جەمىي 129 يۈئەن بولدى"
+                android:textSize="14dp"
+                android:gravity="right|center_vertical"/>
+            </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:elevation="6dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal|bottom">
+        <np.Button
+            style="@style/ALKATIP"
+            android:id="@+id/addtocart"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="پۇل تۆلەش"
+            android:enabled="false"
+            android:background="@color/gray_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/fbutton_color_alizarin"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|top">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:visibility="invisible"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/white"
+            app:iiv_icon="gmi-plus" />
+        <np.TextView
+            android:id="@+id/webtitle"
+            style="@style/headertitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_weight="1" />
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/backarrow"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/white"
+            app:iiv_icon="gmi-arrow-right" />
+
+    </LinearLayout>
+</FrameLayout>

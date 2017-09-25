@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/bg_cart"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mikepenz.iconics.view.IconicsImageView
+        style="@style/tabicons"
+        android:id="@+id/serviceicon"
+        app:iiv_color="@android:color/darker_gray"
+        app:iiv_icon="gmi-minus-circle" />
+    <np.TextView
+        style="@style/ALKATIP"
+        android:id="@+id/serviceprice"
+        android:textColor="@color/fbutton_color_alizarin"
+        android:text="30يۈئەن"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <np.TextView
+        style="@style/ALKATIP"
+        android:id="@+id/servicename"
+        android:text="قوينىڭ ئۈچۆيىنى يۇيىمەن"
+        android:textColor="@color/gray"
+        android:textSize="13dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

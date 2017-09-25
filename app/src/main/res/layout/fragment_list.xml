@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_silver"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mallrecycler"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/typerecycler"
+                android:layout_weight="1"
+                android:layout_width="180dp"
+                android:background="@color/gray_count_edittext_border"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

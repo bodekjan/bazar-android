@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:paddingTop="49dp"
+        android:paddingBottom="49dp">
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/neterror"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:src="@drawable/neterr"
+        android:layout_gravity="center"
+        android:paddingTop="49dp"
+        android:paddingBottom="49dp">
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_footer"
+        android:layout_gravity="center_horizontal|bottom">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/tabsetting"
+            android:gravity="center">
+            <com.mikepenz.iconics.view.IconicsImageView
+                style="@style/tabicons"
+                android:id="@+id/tabsettingimg"
+                app:iiv_color="@android:color/darker_gray"
+                app:iiv_icon="gmd-verified-user" />
+            <np.TextView
+                style="@style/tabtexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مىنىڭ"
+                android:id="@+id/tabsettingtext" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/tabcart"
+            android:gravity="center">
+            <com.mikepenz.iconics.view.IconicsImageView
+                style="@style/tabicons"
+                android:id="@+id/tabcartimg"
+                app:iiv_color="@android:color/darker_gray"
+                app:iiv_icon="gmd-shopping-cart" />
+            <np.TextView
+                style="@style/tabtexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سېۋەت"
+                android:id="@+id/tabcarttext" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/tablist"
+            android:gravity="center">
+            <com.mikepenz.iconics.view.IconicsImageView
+                style="@style/tabicons"
+                android:id="@+id/tablistimg"
+                app:iiv_color="@android:color/darker_gray"
+                app:iiv_icon="gmd-list" />
+            <np.TextView
+                style="@style/tabtexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تۈرلەر"
+                android:id="@+id/tablisttext" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/tabindex"
+            android:gravity="center">
+            <com.mikepenz.iconics.view.IconicsImageView
+                style="@style/tabicons"
+                android:id="@+id/tabindeximg"
+                app:iiv_color="@android:color/darker_gray"
+                app:iiv_icon="gmi-home" />
+            <np.TextView
+                style="@style/tabtexts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="باش بەت"
+                android:id="@+id/tabindextext" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/fbutton_color_alizarin"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|top">
+        <np.TextView
+            style="@style/headertitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</FrameLayout>

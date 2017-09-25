@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/recycleritem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/mallPic"
+        style="@style/recyclerimage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <np.TextView
+        android:id="@+id/mallName"
+        style="@style/recyclertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <np.TextView
+        android:id="@+id/mallPrice"
+        style="@style/recyclerprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

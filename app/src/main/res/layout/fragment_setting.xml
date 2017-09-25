@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_line"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/fbutton_color_alizarin"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="180dp">
+                <ImageView
+                    android:src="@drawable/usered"
+                    android:scaleType="fitXY"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:background="@null">
+                    <TextView
+                        android:id="@+id/phone"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <np.Button
+                        style="@style/ALKATIP"
+                        android:id="@+id/btnSign"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/fbutton_color_nephritis"
+                        android:text="@string/btn_reg"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp" />
+                    <np.Button
+                        style="@style/ALKATIP"
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/fbutton_color_peter_river"
+                        android:text="@string/btn_login"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+                <np.TextView
+                    android:visibility="gone"
+                    style="@style/ALKATIP"
+                    android:text="كىرىش / تىزىملىتىش"
+                    android:id="@+id/getstart"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+                <LinearLayout
+                    android:id="@+id/mdealbtn"
+                    style="@style/SettingButtonStyle">
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@android:color/darker_gray"
+                        app:iiv_icon="gmi-arrow-left" />
+                    <np.TextView
+                        style="@style/SettingValueStyle"
+                        android:text="1"
+                        android:textColor="@color/red_hint"
+                        android:id="@+id/setting_item_lang"/>
+                    <np.TextView
+                        style="@style/SettingItemStyle"
+                        android:text="زاكاسلىرىم"
+                        android:layout_marginRight="8dp" />
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@android:color/holo_red_dark"
+                        app:iiv_icon="gmi-truck" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/maddressbtn"
+                    style="@style/SettingButtonStyle">
+                    <np.TextView
+                        style="@style/SettingItemStyle"
+                        android:text="ئەپنى ھەمبەھىرلەش"
+                        android:layout_marginRight="8dp" />
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@color/colorAccent"
+                        app:iiv_icon="gmi-pin" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/mmanualbtn"
+                    style="@style/SettingButtonStyle">
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@android:color/darker_gray"
+                        app:iiv_icon="gmi-arrow-left" />
+                    <np.TextView
+                        style="@style/SettingItemStyle"
+                        android:text="ئىشلىتىش قوللانمىسى"
+                        android:layout_marginRight="8dp" />
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@color/snackbgdbg"
+                        app:iiv_icon="gmi-pin-help" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/maboutbtn"
+                    style="@style/SettingButtonStyle">
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@android:color/darker_gray"
+                        app:iiv_icon="gmi-arrow-left" />
+                    <np.TextView
+                        style="@style/SettingItemStyle"
+                        android:text="ئەپ ھەققىدە"
+                        android:layout_marginRight="8dp" />
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@color/order_paid"
+                        app:iiv_icon="gmi-globe" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/setting_timezone"
+                    style="@style/SettingButtonStyle">
+                    <np.TextView
+                        style="@style/SettingValueStyle"
+                        android:text="V1.0"
+                        android:id="@+id/setting_item_lang"/>
+                    <np.TextView
+                        style="@style/SettingItemStyle"
+                        android:text="ئەپ نەشىرى"
+                        android:layout_marginRight="8dp" />
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        style="@style/SettingIconStyle"
+                        app:iiv_color="@color/settingvaluecolor"
+                        app:iiv_icon="gmi-cloud-upload" />
+                </LinearLayout>
+            </LinearLayout>
+            <np.TextView
+                style="@style/ALKATIP"
+                android:text="ئەپ تۈزگۈچى: نەنجىڭ ئەيشۈنيى تور-تېخنىكا چەكلىك شىركىتى"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/textgrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
